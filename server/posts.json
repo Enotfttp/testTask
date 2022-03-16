@@ -1,0 +1,100 @@
+{
+  "users": [
+    {
+      "id": 5,
+      "name": "Chelsey Dietrich",
+      "password": "123",
+      "username": "Kamren",
+      "email": "test123",
+      "phone": "(254)954-1289"
+    },
+    {
+      "id": 7,
+      "name": "Kurtis Weissnat",
+      "password": "123",
+      "username": "Elwyn.Skiles",
+      "email": "Telly.Hoeger@billy.biz",
+      "phone": "210.067.6132"
+    },
+    {
+      "id": 8,
+      "name": "Nicholas Runolfsdottir V",
+      "password": "123",
+      "username": "Maxime_Nienow",
+      "email": "Sherwood@rosamond.me",
+      "phone": "586.493.6943 x140"
+    },
+    {
+      "id": 9,
+      "name": "Glenna Reichert",
+      "password": "123",
+      "username": "Delphine",
+      "email": "Chaim_McDermott@dana.io",
+      "phone": "(775)976-6794 x41206"
+    },
+    {
+      "id": 10,
+      "name": "Clementina DuBuque",
+      "password": "123",
+      "username": "Moriah.Stanton",
+      "email": "Rey.Padberg@karina.biz",
+      "phone": "024-648-3804"
+    },
+    {
+      "id": 11,
+      "name": "Kurtis Weissnat",
+      "password": "123",
+      "username": "Elwyn.Skiles",
+      "email": "Telly.Hoeger@billy.biz",
+      "phone": "210.067.6132"
+    },
+    {
+      "id": 12,
+      "name": "Nicholas Runolfsdottir V",
+      "password": "123",
+      "username": "Maxime_Nienow",
+      "email": "Sherwood@rosamond.me",
+      "phone": "586.493.6943 x140"
+    },
+    {
+      "id": 13,
+      "name": "Glenna Reichert",
+      "password": "123",
+      "username": "Delphine",
+      "email": "Chaim_McDermott@dana.io",
+      "phone": "(775)976-6794 x41206"
+    },
+    {
+      "id": 17,
+      "name": "Glenna Reichert",
+      "password": "123",
+      "username": "Delphine",
+      "email": "Chaim_McDermott@dana.io",
+      "phone": "(775)976-6794 x41206"
+    },
+    {
+      "name": "test",
+      "password": "test",
+      "username": "test",
+      "email": "test",
+      "phone": "test",
+      "id": 18
+    },
+    {
+      "name": "test",
+      "password": "test",
+      "username": "test",
+      "email": "test",
+      "phone": "test",
+      "id": 19
+    },
+    {
+      "name": "3",
+      "password": "3",
+      "username": "3",
+      "email": "3",
+      "phone": "3",
+      "id": 20
+    }
+  ]
+}
