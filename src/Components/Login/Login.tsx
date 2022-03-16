@@ -32,7 +32,6 @@ const Login = () => {
 	}
 	const checkUsers = (data: iGetLogin[]): void => {
 		if (data.length != 0) {
-			navigate('/main')
 			data.forEach((el: iGetLogin) => {
 				RootStore.userStore.id = el.id;
 				RootStore.userStore.email = el.email;
@@ -41,6 +40,7 @@ const Login = () => {
 				RootStore.userStore.username = el.username
 				localStorage.setItem('token', el.name)
 				localStorage.setItem('id', String(el.id))
+				navigate('/main')
 			})
 			console.log('Вошел');
 		}
