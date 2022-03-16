@@ -10,7 +10,7 @@ import { SecondPageStyle } from "./SecondPageStyle";
 
 @observer
 class SecondPage extends React.Component {
-	@observable allPosts: iGetLogin[] = [];
+	@observable allUsers: iGetLogin[] = [];
 	@observable search: string = "";
 	@observable userId: number = 0;
 	@observable button: string = "";
@@ -26,7 +26,7 @@ class SecondPage extends React.Component {
 	_getAllUsers() {
 		getAllUsers().then((res: iGetLogin[]) => {
 			runInAction(() => {
-				this.allPosts = res
+				this.allUsers = res
 			})
 		}).catch((error: string) => {
 			console.error(`Что-то пошло не так ${error}`)
@@ -45,7 +45,16 @@ class SecondPage extends React.Component {
 		this.button = button;
 		RootStore.eventStore.isOpen = true;
 	}
+	@action
 	setSearch(searchtext: string) {
+		if (searchtext !== "") {
+			this.allUsers = this.allUsers.filter((elem: iGetLogin) => {
+				return elem.name.toLowerCase().includes(searchtext.toLowerCase())
+			})
+		} else {
+			this._getAllUsers()
+		}
+
 	}
 	@action
 	closeModal() {
@@ -89,7 +98,7 @@ class SecondPage extends React.Component {
 					</div>
 					<div className="table-users">
 						<div className="content-table">
-							{this.allPosts && this.allPosts.map((el: iGetLogin) => {
+							{this.allUsers && this.allUsers.map((el: iGetLogin) => {
 								id = el.id;
 								return (<li key={el.id}>
 									<p>Имя пользователя</p>
